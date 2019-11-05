@@ -1,0 +1,66 @@
+index
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css"/>
+
+</head>
+<body>
+<h1>УРОКИ ЭЛЕКТРОТЕХНИКИ</h1>
+<div class="main">
+    <div class="fon">
+        <h2>Схема</h2>
+    </div>
+
+    <div class="joins">
+        <h2>Соеденения</h2>
+        <h3>собираем контрольную лампочку.</h3>
+        <div class="inputs">
+            <div class="join">
+                1.<input type="text" id="join1L"/>+<input type="text" id="join1R"/>=<input type="text" id="result"/>
+                <button id="btn1">решить</button>
+                <div class="lamp" id="lamp"></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
+style
+body {
+    background-color: #2ec773;
+}
+
+h1{
+    text-align: center;
+}
+
+.fon {
+    background-image: url("../images/fon.jpg");
+    height: 720px;
+    width: 1280px;
+}
+
+.joins {
+    background-color: #34b0b3;
+}
+
+.main {
+    display: flex;
+}
+.inputs input {
+    width: 25px;
+}
+js
+var result1 = 0;
+function add(){
+    var join1L = document.getElementById("join1L").value;
+    var join1R = document.getElementById("join1R").value;
+    result1= parseInt(join1L)+ parseInt(join1R);
+    document.getElementById("result").value=result1;
+}
+document.getElementById('btn1').addEventListener('click', add);

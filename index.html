@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css"/>
+
+</head>
+<body>
+<h1>УРОКИ ЭЛЕКТРОТЕХНИКИ</h1>
+<h2 style="margin-left: -576px">Схема</h2>
+<div class="main">
+    <div class="fon">
+        <!--Самый главный выключатель-->
+        <button id="btn-main">1</button>
+        <div class="controlLamp" id="controlLamp">
+
+        </div>
+        <button id="btn-kettle">2</button>
+        <audio controls id="linkAudio" class="dnone">
+            <source src="sounds/svist-chajnika.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <button id="btn-chandelier">3</button>
+        <div class="chandelier" id="chandelier">
+
+        </div>
+        <button id="btn-garland">4</button>
+        <div class="lamp1" id="lamp1">
+
+        </div>
+        <div class="lamp2" id="lamp2">
+
+        </div>
+        <div class="lamp3" id="lamp3">
+
+        </div>
+        <button id="btn-bell">5</button>
+        <audio controls id="linkAudio2" class="dnone2">
+            <source src="sounds/mnogokratnoe-nazhatie-na-zvonok.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <button id="btn-tv">6</button>
+        <video class="tv" id="tv">
+            <source src="sounds/videoplayback.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button id="btn-recordplayer">7</button>
+        <audio controls id="recordplayer" class="dnone7">
+        <source src="sounds/zvuk-bystroj-peremotki-magnitofona.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+        <button id="btn-chandelier2">8</button>
+        <div class="lamp5" id="lamp5">
+
+        </div>
+        <div class="lamp6" id="lamp6">
+
+        </div>
+        <button id="btn-vacuumcleaner">9</button>
+        <audio controls id="vacuumcleaner" class="dnone7">
+            <source src="sounds/00197.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <button id="btn-floorlamp">10</button>
+        <div class="lamp4" id="floorlamp">
+
+        </div>
+    </div>
+
+    <div class="joins">
+        <h2>Соеденения</h2>
+        <div class="inputs">
+            <div class="join">
+                <form autocomplete="off" onsubmit="return false">
+                    <input type="text" id="L"/> - <input type="text" id="R"/>
+                    <button id="btn1">соеденить</button>
+                </form>
+            </div>
+        </div>
+        <h2>Подключено</h2>
+        <div id="connections">
+        </div>
+    </div>
+</div>
+<div class="delete">
+    <div class="greenYellow">Удаление пары соеденений</div>
+    <div class="textCenter">
+        <form autocomplete="off" onsubmit="return false">
+            <input type="text" id="Ld"/> - <input type="text" id="Rd"/>
+            <button id="btn1d">удалить</button>
+        </form>
+    </div>
+</div>
+<div class="errors">
+    <span class="errorHeader">Ошибки:</span>
+    <span id="errorText"></span>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
