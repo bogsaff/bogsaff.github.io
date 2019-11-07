@@ -1,4 +1,4 @@
-@media screen and (min-width: 500px) { /* for screens from 1000px*/
+@media screen and (max-width: 499px) { /* for screens from 1000px*/
     body {
         background-color: #2ec773;
     }
@@ -11,12 +11,15 @@
         background-image: url("../images/bg.jpg");
         background-repeat: no-repeat;
         height: 698px;
-        width: 1081px;
+        width: 960px;
     }
 
     .joins {
         background-color: #34b0b3;
         padding: 20px;
+        left: 366px;
+        position: relative;
+        margin-left: -369px;
     }
 
     .main {
