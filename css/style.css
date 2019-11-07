@@ -179,12 +179,12 @@ h2{
     display: none;
 }
 .errors {
-    width: 200px;
+    width: 194px;
     height: 200px;
     background-color: #34b0b3;
     position: absolute;
-    top: 118px;
-    left: 1668px;
+    top: 193px;
+    left: 1285px;
     padding: 8px;
 }
 .errorHeader {
@@ -197,8 +197,8 @@ h2{
     height: 50px;
     background-color: #34b0b3;
     position: absolute;
-    top: 118px;
-    left: 1419px;
+    top: 127px;
+    left: 1279px;
     padding: 8px;
 }
 .textCenter {
