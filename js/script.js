@@ -134,10 +134,26 @@ function isJoinBusy(socket){
 function join() {
     var L = parseInt(document.getElementById("L").value);
     var R = parseInt(document.getElementById("R").value);
+
+    // проверка на заполненность полей
+    if (isNaN(L) && isNaN(R)) {
+        document.getElementById("errorText").innerHTML ="Поля не заполнены";
+        return;
+    } else if (isNaN(L) || isNaN(R)) {
+        document.getElementById("errorText").innerHTML ="Поле не заполнено";
+        return;
+    }
+
     if (L > R) {
         var tmp = L; // temporary
         L = R;
         R = tmp;
+    }
+
+    // проверяем что номер гнезда в диапазоне 1..74
+    if (L < 1 || L > 74 || R < 1 || R > 74) {
+        document.getElementById("errorText").innerHTML ="Гнезда должны быть в диапазоне 1-74";
+        return;
     }
 
     // проверка на занятость гнезда
@@ -165,16 +181,6 @@ function join() {
             document.getElementById("errorText").innerHTML = "Розетка 1314 занята";
             return;
         }
-    }
-    // проверка на пустые поля
-    console.log(L, R);
-    if (isNaN(L) && isNaN(R)) {
-        alert('Поля не заполнены!');
-        document.getElementById("L").style.borderColor = "red";
-        return;
-    } else if (isNaN(L) || isNaN(R)) {
-        alert('Поле не заполнено!');
-        return;
     }
     // проверка на соединение гнезда с самим собой
     if (L == R) {
