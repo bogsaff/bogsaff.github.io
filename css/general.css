@@ -1,0 +1,5 @@
+#connections {
+    display: flex;
+    flex-wrap: wrap;
+    width: 160px;
+}
