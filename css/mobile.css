@@ -1,6 +1,6 @@
-@media screen and (max-width: 499px) { /* for screens from 1000px*/
+@media screen and (min-width: 200px) { /* for screens from 1000px*/
     body {
-        background-color: #2ec773;
+        background-color: #c7bd3c;
     }
 
     h1{
