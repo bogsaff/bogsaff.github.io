@@ -284,42 +284,42 @@ function switchOff() {
 
     // выключаем все остальное
     document.getElementById("chandelier").style.backgroundColor = "black";
-    chandelier = 0;
+    //chandelier = 0;
 
     document.getElementById("linkAudio").pause();
     document.getElementById("linkAudio").currentTime = 0;
-    kettle=0;
+    //kettle=0;
 
     document.getElementById('lamp1').style.backgroundColor='black';
     document.getElementById('lamp2').style.backgroundColor='black';
     document.getElementById('lamp3').style.backgroundColor='black';
-    lamp1=0;
-    lamp2=0;
-    lamp3=0;
+    //lamp1=0;
+    //lamp2=0;
+    //lamp3=0;
 
     document.getElementById("linkAudio2").pause();
     document.getElementById("linkAudio2").currentTime = 0;
-    bell=0;
+    //bell=0;
 
     document.getElementById("tv").pause();
     document.getElementById("tv").currentTime = 0;
-    tv=0;
+    //tv=0;
 
     document.getElementById('lamp5').style.backgroundColor='black';
     document.getElementById('lamp6').style.backgroundColor='black';
-    lamp5=0;
-    lamp6=0;
+    //lamp5=0;
+    //lamp6=0;
 
     document.getElementById("recordplayer").pause();
     document.getElementById("recordplayer").currentTime = 0;
-    recordplayer=0;
+    //recordplayer=0;
 
     document.getElementById("vacuumcleaner").pause();
     document.getElementById("vacuumcleaner").currentTime = 0;
-    vacuumcleaner=0;
+    //vacuumcleaner=0;
 
     document.getElementById('floorlamp').style.backgroundColor='black';
-    floorlamp=0;
+    //floorlamp=0;
 }
 
 // Button #1
@@ -332,6 +332,51 @@ function mainBtnHandler() {
     } else {
         switchOff();
     }
+
+
+    // Прокликиваем все кнопки, на случай, если что включено
+    //btnchandelier();
+    if (controlLamp == 1) {
+        if (chandelier == 1) {
+            document.getElementById("chandelier").style.backgroundColor = "yellow";
+        }
+
+        if (kettle == 1) {
+            document.getElementById("linkAudio").play();
+        }
+
+        if (lamp1 == 1) {
+            document.getElementById('lamp1').style.backgroundColor='green';
+            document.getElementById('lamp2').style.backgroundColor='blue';
+            document.getElementById('lamp3').style.backgroundColor='purple';
+        }
+
+        if (bell == 1) {
+            document.getElementById("linkAudio2").play();
+        }
+
+        if (tv == 1) {
+            document.getElementById("tv").play();
+        }
+
+        if (lamp5 == 1) {
+            document.getElementById('lamp5').style.backgroundColor='yellow';
+            document.getElementById('lamp6').style.backgroundColor='yellow';
+        }
+
+        if (recordplayer == 1) {
+            document.getElementById("recordplayer").play();
+        }
+
+        if (vacuumcleaner == 1) {
+            document.getElementById("vacuumcleaner").play();
+        }
+
+        if (floorlamp == 1) {
+            document.getElementById('floorlamp').style.backgroundColor='yellow';
+        }
+    }
+
 }
 
 // Button #3

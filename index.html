@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="css/mobile.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/general.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/noletters.js"></script>
 </head>
 <body>
 <h1>УРОКИ ЭЛЕКТРОТЕХНИКИ</h1>
@@ -76,7 +79,7 @@
         <div class="inputs">
             <div class="join">
                 <form autocomplete="off" onsubmit="return false">
-                    <input type="text" id="L"/> - <input type="text" id="R"/>
+                    <input type="text" id="L" class="number-only" maxlength="2"/> - <input type="text" id="R" class="number-only"  maxlength="2"/>
                     <button id="btn1">соеденить</button>
                 </form>
             </div>
@@ -91,7 +94,7 @@
     <div class="greenYellow">Удаление пары соеденений</div>
     <div class="textCenter">
         <form autocomplete="off" onsubmit="return false">
-            <input type="text" id="Ld"/> - <input type="text" id="Rd"/>
+            <input type="text" id="Ld" class="number-only" maxlength="2"/> - <input type="text" id="Rd" class="number-only" maxlength="2"/>
             <button id="btn1d">удалить</button>
         </form>
     </div>
@@ -109,6 +112,6 @@ todo:
 1. +ошибка когда пропущено гнездо
 2. +в два столбца соединения
 3. +гнездо 333 занято!
-4. когда мы включаем контрольную лампу то прокликать все приборы (кнопки)
-5. -no letters!!!
+4. +когда мы включаем контрольную лампу то прокликать все приборы (кнопки)
+5. +no letters!!!
 ->
