@@ -395,7 +395,7 @@ function btnchandelier() {
 }
 
 function btnKettle() {
-    if (controlLamp == 0 && kettle == 0
+    if (controlLamp == 1 && kettle == 0
         && checkDuplicates(3, 17) && checkDuplicates(4, 18) && (checkDuplicates(14, 17)
         && checkDuplicates(13, 18) && checkDuplicates(13, 24) && checkDuplicates(14, 23)) || (checkDuplicates(17, 28)
         && checkDuplicates(18, 27) && checkDuplicates(23, 28) && checkDuplicates(24, 27)) && checkDuplicates(21, 23)
@@ -413,7 +413,7 @@ function btnKettle() {
 function btnGerland() {
     if (lamp1==0 && lamp2==0 && lamp3==0
         && controlLamp==1 &&  checkDuplicates(3, 17) && checkDuplicates(4, 18) && ((checkDuplicates(14, 17)
-        && checkDuplicates(13, 18) && checkDuplicates(11,14) && checkDuplicates(12,15))||
+        && checkDuplicates(13, 18) && checkDuplicates(11,14) && checkDuplicates(12,13))||
         (checkDuplicates(17,28) && checkDuplicates(18, 27) && checkDuplicates(11,28) && checkDuplicates(12,27) )
         ) && checkDuplicates(9,11) && checkDuplicates(10,34) && checkDuplicates(32,34) && checkDuplicates(30, 32) &&
         checkDuplicates(29,31) && checkDuplicates(31,33) && checkDuplicates(12,33)) {
@@ -434,7 +434,7 @@ function btnGerland() {
 }
 
 function btnBell() {
-    if (controlLamp == 0 && bell == 0
+    if (controlLamp == 1 && bell == 0
         && checkDuplicates(3,37) && checkDuplicates(4,38) && checkDuplicates(37,41 && checkDuplicates(40,42) &&
         checkDuplicates(38,39))) {
 

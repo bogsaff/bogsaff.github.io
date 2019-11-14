@@ -3,3 +3,10 @@
     flex-wrap: wrap;
     width: 160px;
 }
+
+.discription{
+    background-color:#34b0b3;
+    padding: 15px;
+    color: #000;
+    font-family: arial;
+}
