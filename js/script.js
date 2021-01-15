@@ -435,8 +435,8 @@ function btnGerland() {
 
 function btnBell() {
     if (controlLamp == 1 && bell == 0
-        && checkDuplicates(3,37) && checkDuplicates(4,38) && checkDuplicates(37,41 && checkDuplicates(40,42) &&
-        checkDuplicates(38,39))) {
+        && checkDuplicates(3,37) && checkDuplicates(4,38) && checkDuplicates(37,41) && checkDuplicates(40,42) &&
+        checkDuplicates(38,39)) {
 
         document.getElementById("linkAudio2").play();
         bell=1;
